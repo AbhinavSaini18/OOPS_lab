@@ -74,63 +74,63 @@
 
 
 
-// #include <iostream>
-// using namespace std;
-// class Rectangle{
-//     private:
-//         float length;
-//         float breadth;
-//     public:
-//         Rectangle(){
-//             length=0;
-//             breadth=0;
-//             cout<<"default constructor\n";
+#include <iostream>
+using namespace std;
+class Rectangle{
+    private:
+        float length;
+        float breadth;
+    public:
+        Rectangle(){
+            length=0;
+            breadth=0;
+            cout<<"default constructor\n";
             
-//         }
-//         Rectangle(float x){
-//             length=x;
-//             breadth=x;
-//             cout<<"one parameter construcuter caled\n";
-//         }
-//         Rectangle(float l,float b){
-//             length=l;
-//             breadth=b;
-//             cout<<"two parameter construcuter caled\n";
-//         }
-//         float area(){
-//             return length*breadth;
-//         }
-// };
-// int main()
-// {
-//     float *f=new float;
-//     *f=5.5;
-//     cout<<*f<<endl;
-//     delete f;
+        }
+        Rectangle(float x){
+            length=x;
+            breadth=x;
+            cout<<"one parameter construcuter caled\n";
+        }
+        Rectangle(float l,float b){
+            length=l;
+            breadth=b;
+            cout<<"two parameter construcuter caled\n";
+        }
+        float area(){
+            return length*breadth;
+        }
+};
+int main()
+{
+    float *f=new float;
+    *f=5.5;
+    cout<<*f<<endl;
+    delete f;
     
-//     int *arr=new int[5];
-//     for(int i=0;i<5;i++)
-//         arr[i]=i+1;
-//     for(int i=0;i<5;i++)
-//         cout<< arr[i]<<" ";
-//     delete[] arr;
+    int *arr=new int[5];
+    for(int i=0;i<5;i++)
+        arr[i]=i+1;
+    for(int i=0;i<5;i++)
+        cout<< arr[i]<<" ";
+    delete[] arr;
     
-//     float *farr=new float[3]{1.1,2.2,3.3};
-//     for(int i=0;i<3;i++)
-//         cout<< farr[i]<<" ";
-//     delete[] farr;
+    float *farr=new float[3]{1.1,2.2,3.3};
+    for(int i=0;i<3;i++)
+        cout<< farr[i]<<" ";
+    delete[] farr;
     
-//     Rectangle *r=new Rectangle(3,4);
-//     cout<<"Area = "<<r->area()<<endl;
-//     delete r;
+    Rectangle *r=new Rectangle(3,4);
+    cout<<"Area = "<<r->area()<<endl;
+    delete r;
     
-//     Rectangle *robj=new Rectangle[2]{
-//         Rectangle(2,3),
-//         Rectangle(5,6)
-//     };
-//     for (int i=0;i<2;i++){
-//         cout<<robj[i].area()<<endl;
-//     }
-//     delete[] robj;
+    Rectangle *robj=new Rectangle[2]{
+        Rectangle(2,3),
+        Rectangle(5,6)
+    };
+    for (int i=0;i<2;i++){
+        cout<<robj[i].area()<<endl;
+    }
+    delete[] robj;
     
-// }
+}
